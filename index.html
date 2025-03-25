@@ -53,80 +53,87 @@
             font-weight: bold;
             color: #21b4ce;
         }
-        body {
+        h1 {
+            background-color: #f1f5f5;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+        h2 {
             background-image: url(ingmar-h-MzjIPVnCFKM-unsplash.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
-            background-clip: border-box;
-            width: 100%;
-            height: 20%;
+            background-clip: padding-box;
+            block-size: 100% 30%;
+            margin: 0px 0px;
         }        
     </style>
     <title>My little journey</title>
 </head>
 
-<body>
-    <header>
-    <div class="row" width="100%">
-        <table width="100%">
-            <tr>
-            <td>
-                <form>
-                    <p>
-                        <label for="dest">Destination</label>
-                    </p>
-                    <p>
-                        <select id="dest" name="Destination">
-                            <option value="">Destination</option>
-                            <option value="Paris">Paris</option>
-                            <option value="Tokyo">Tokyo</option>
-                            <option value="Sydney">Sydney</option>
-                            <option value="San Francisco">San Francisco</option>
-                        </select>
-                    </p>
-                </form>
-            </td>
-            <td>
-                
-                <form>
-                    <p>
-                        <label for="from date">From</label>
-                    </p>
-                    <p>
-                        <input type="date" id="from date" name="from date">
-                    </p>
-                </form>
-            </td>
-            <td>
-                <form>
-                    <p>
-                        <label for="to date">To</label>
-                    </p>
-                    <p>
-                        <input type="date" id="to date" name="to date">
-                    </p>
-                </form>
-            </td>
-            <td>
-                <form>
-                    <p>
-                        <label for="guests">Guests</label>
-                    </p>
-                    <p>
-                        <input type="number" id="guests" name="guests" min="1" max="10">
-                    </p>
-                </form>
-            </td>
-            <td>
-                <button type="submit">
-                Submit
-                </button>
-            </td>
-        </tr>
-        </table>
-    <div>
-    </header>
+<body style="background-color: #fffbfb;">
+    <h1>My little journey</h1>
+        <h2 class="row" width="100%">
+            <table width="100%">
+                <tr>
+                <td>
+                    <form>
+                        <p>
+                            <label for="dest">Destination</label>
+                        </p>
+                        <p>
+                            <select id="dest" name="Destination">
+                                <option value="">Destination</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Tokyo">Tokyo</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+                        </p>
+                    </form>
+                </td>
+                <td>
+                    
+                    <form>
+                        <p>
+                            <label for="from date">From</label>
+                        </p>
+                        <p>
+                            <input type="date" id="from date" name="from date">
+                        </p>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <p>
+                            <label for="to date">To</label>
+                        </p>
+                        <p>
+                            <input type="date" id="to date" name="to date">
+                        </p>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <p>
+                            <label for="guests">Guests</label>
+                        </p>
+                        <p>
+                            <input type="number" id="guests" name="guests" min="1" max="10">
+                        </p>
+                    </form>
+                </td>
+                <td>
+                    <button type="submit">
+                    Submit
+                    </button>
+                </td>
+            </tr>
+            </table>
+        <h2>
 </body>
 </html>
 
