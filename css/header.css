@@ -93,7 +93,7 @@ header {
       rgba(0, 0, 0, 0) 60%,
       rgba(0, 0, 0, 0.7)
     ),
-    url('/images/header.jpg');
+    url('../images/header.jpg');
   background-position: center;
 
   /* if we Google "css fill background with image", we find this: */
