@@ -87,7 +87,13 @@
 
 header {
   /* A way to use an image in a background: */
-  background-image: url('/images/header.jpg');
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/images/header.jpg');
   background-position: center;
 
   /* if we Google "css fill background with image", we find this: */
