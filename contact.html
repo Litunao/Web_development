@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel agency: Homepage</title>
+    <meta name="description" content="Travel agency: Homepage">
+    <meta name="author" content="You">
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <form class="input-group">
+            <img src="./icons/search-white.svg" alt="Search">
+            <input
+              class="form-control"
+              id="search-field"
+              name="query"
+              placeholder="Search"
+              type="text"
+            >
+          </form>
+          <div id="logo">
+            <img src="./icons/globe-white.svg" alt="Logo">
+          </div>
+          <div id="menu">
+            <nav class="d-none d-lg-block">
+              <a href="index.html">Home</a>
+              <a href="destination.html#galery">Destinations</a>
+              <a href="contact.html#contact-form">Contact us</a>
+            </nav>
+            <div class="btn-group">
+              <button id="btntgl" class="btn btn-secondary btn-sm dropdown-toggle d-lg-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="menu-bars" src="./icons/three-bars-white.svg" alt="Menu">
+
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="destination.html#galery">Destinations</a></li>
+                <li><a class="dropdown-item" href="contact.html#contact-form">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="book">
+        <div class="container-md wrap">
+          <h1>
+            Contact us!<br>
+          </h1>
+          <div class="badge tagline">Fill in the form:</div>
+        </div>
+      </div>
+    </header>
+    <section id="contact-form">
+      <div class="container-md">
+        <form action="contact-success.html" class="contact-form">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+xxx xxxxxxxx" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+          </div>
+          
+          <div>
+            <button class="btn btn-warning" title="Submit" type="submit">
+              <img src="./icons/arrow-right.svg" alt="arrow">
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container-md">
+        <div>
+          <h3>Links</h3>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input
+              autocomplete="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+              type="email"
+            >
+            <button class="btn btn-success" type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
